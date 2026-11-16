@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Manavarya09/designlang",
+  "title": "designlang",
+  "description": "Measure any site's design system, score how generic a page looks, check UI against your brand.",
+  "repository": {
+    "url": "https://github.com/Manavarya09/design-extract",
+    "source": "github"
+  },
+  "websiteUrl": "https://designlang.app",
+  "version": "13.4.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "designlang",
+      "version": "13.4.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "environmentVariables": [
+        {
+          "name": "DESIGNLANG_BRAND_TOKEN",
+          "description": "Optional. The token for your confirmed brand at designlang.app/brand; verify_ui then adds hosted fix suggestions.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
